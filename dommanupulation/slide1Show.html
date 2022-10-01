@@ -66,15 +66,15 @@
      ]  ;
         const name=["siddhu","sager","samrth","sachin","sheker","mahesh","shiv","saham"]
 
-     let idx=0;
+     let idx=positionArray.length;
      setInterval(() => {
-        idx++;
+        idx--;
         bodytag.style["justify-content"]=positionArray[idx]["justify-content"]
         bodytag.style["align-items"]=positionArray[idx]["align-items"]
 
    div.innerText=name[idx];
-        if(idx===positionArray.length-1){
-            idx=-1;
+        if(idx===0){
+            idx=positionArray.length;
         }
         
      }, 1000);

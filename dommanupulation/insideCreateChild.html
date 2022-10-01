@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>siddharam</p>
+    </div>
+    
+    <script>
+        const divtag=document.getElementsByTagName("div")[0];
+        const img1=document.createElement('img');
+        img1.setAttribute("src","https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg")
+       img1.style.width="200px";
+         img1.style.height="100px"
+
+    divtag.appendChild(img1);
+     const h1tag=document.createElement('h1')
+     h1tag.innerText='siddhaaram mahadeo gorsanawe'
+     h1tag.style.color="red";
+     divtag.appendChild(h1tag);
+     setInterval(() => {
+        divtag.removeChild(img1)
+     }, 5000);
+   
+   </script>
+</body>
+</html>

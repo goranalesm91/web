@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="decriment()"><</button>
+    <h1 style="border: 1px solid black; width:50px">0</h1>
+    <button onclick="incriment()">></button>
+
+    <script>
+        const  val =document.getElementsByTagName("h1")[0];
+        let numb= parseInt(val.innerText)
+        function incriment(e){
+            
+    
+         val.innerText=numb++
+        }
+
+        function decriment(){
+           numb -=1;
+           val.innerText=numb
+
+        }
+    </script>
+</body>
+</html>
