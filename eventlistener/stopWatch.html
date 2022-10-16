@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 300px;
+            height: 200px;
+        }
+        button{
+            font-size: 30px;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+    <div>
+         <h1>00m : 00s</h1>
+        
+    </div>
+    <div>
+        <button>Start</button>
+        <button>Reset</button>
+    </div>
+</div>
+<script>
+  h1Tag=document.getElementsByTagName('h1')[0];
+  const startButton=document.getElementsByTagName('button')[0];
+  const resetButton=document.getElementsByTagName('button')[1];
+
+  startButton.addEventListener('click',startandStop);
+ let minit =0;
+ let second=0;
+ let interaval
+  function startandStop(){
+
+  }
+
+</script>
 </body>
 </html>
