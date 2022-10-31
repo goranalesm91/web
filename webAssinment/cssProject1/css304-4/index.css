@@ -1,0 +1,38 @@
+.stikeey{
+    display: flex;
+    background: #0e0e0e;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+img{
+    height: 40px;
+    width: 40px;
+   padding-top: 5px;
+   display: flex;
+justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+   
+
+}
+.PNG{
+    
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+   padding-top: 5px;
+   display: flex;
+justify-content: center;
+    align-items: center;
+}
+
+.name-1{
+    color: hsl(0, 0%, 90%);
+    
+}
+.name{
+    color: hsl(0, 0%, 90%);
+}
